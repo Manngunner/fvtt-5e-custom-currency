@@ -1,17 +1,35 @@
 {
-  "$schema": "https://json.schemastore.org/foundryvtt-manifest.json",
-  "id": "foundry-module-ts",
-  "title": "Typescript Template Module",
-  "description": "A template module using Typescript. You should change name, title, and description in module.json.",
-  "version": "1.0.0",
+  "$schema": "https://json.schemastore.org/foundryvtt-module-manifest.json",
+  "id": "fvtt-5e-custom-currency",
+  "title": "Custom Currency DnD5e",
+  "description": "Modify the default currency to match your world's needs",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Monke",
+      "discord": "monke69420haha",
+      "email": "46092339+Manngunner@users.noreply.github.com"
+    }
+  ],
   "packs": [],
-  "system": [],
-  "dependencies": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "4.1.1",
+          "verified": "4.1.2"
+        }
+      }
+    ]
+  },
   "scripts": [],
   "compatibility": {
-    "minimum": "9",
-    "verified": "10",
-    "maximum": "10"
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
   },
   "languages": [
     {
@@ -20,6 +38,11 @@
       "path": "languages/en.json"
     }
   ],
-  "styles": ["style.css"],
-  "esmodules": ["scripts/module.js"]
+  "styles": ["./css/module.css"],
+  "esmodules": ["./scripts/module.js"],
+  "url": "https://github.com/Manngunner/fvtt-5e-custom-currency",
+  "manifest": "https://github.com",
+  "download": "https://github.com",
+  "bugs": "https://github.com/Manngunner/fvtt-5e-custom-currency/issues",
+  "readme": "https://github.com/Manngunner/fvtt-5e-custom-currency/blob/main/README.md"
 }
